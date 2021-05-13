@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Russo One', sans-serif;
+}
+.card{
+    width:20vw;
+    margin:auto;
+    background-color:rgb(255, 177, 255);
+    margin-top:20vh;
+    padding-top: 45px;
+    box-shadow:10px 10px 15px -10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.icon{
+    color:yellow;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 60px;
+    animation:zoom 2s infinite alternate;
+}
+.info{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(255, 219, 255);
+    padding-top:10px;
+    padding-bottom:80px;
+}
+.city-name{
+    margin:auto;
+    font-size:30px;
+    margin-top: 35px;
+    /* animation:andy 0.5s infinite alternate; */
+}
+.date{
+    margin:auto;
+    margin-top:10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+.temp{
+    margin-top:25px;
+    font-size:30px;
+    margin:auto;
+}
+.max-min{
+    margin:auto;
+    margin-top:5px;
+    font-family: 'Merriweather', serif;
+}
+.fa-street-view{
+    animation:andy 0.5s infinite alternate;
+}
+@keyframes andy{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-10px);}
+}
+@media(min-width:550px) and (max-width:1000px){
+    .card{
+        width:40vw;
+    }
+}
+@media(max-width:550px){
+    .card{
+        width:70vw;
+    }
+}
+@keyframes zoom{
+    from{
+        transform:scale(1.0);
+    }
+    to{
+        transform:scale(1.4);
+    }
+}
